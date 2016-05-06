@@ -17,7 +17,7 @@ class HomeController < ApplicationController
     census_fields = @census.where({ fields: pop, level: "ZCTA5:#{zip}", within: "STATE:#{state_num}" })
     population = census_fields.first[pop].to_i
 
-    if population >= 1000 && population < 15g000
+    if population >= 1000 && population < 15000
       answer = "If you know how to fight you may survive"
       suggestion = "WE SUGGEST YOU STOCK UP!"
       webpage = "http://www.budk.com/zombie-survival-3536"
