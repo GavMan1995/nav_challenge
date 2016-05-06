@@ -55,10 +55,10 @@ class Home extends React.Component {
             <h4 className="population">The population where you live is:</h4>
             <h3 className={color}>{this.state.population}</h3>
             <h4 className="center">{this.state.suggestion}</h4>
+            <a href={url} target="_blank">GO HERE</a>
           </div>
           <h4 className="zesimate">{sellHouse}</h4>
           <h3 className="green-text">{zestimate}</h3>
-          <a href={url} target="_blank">GO HERE</a>
           <br/>
           <br/>
         </div>
