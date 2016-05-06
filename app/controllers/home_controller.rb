@@ -1,3 +1,4 @@
+require 'open-uri'
 class HomeController < ApplicationController
   before_action :rillow
   before_action :census
@@ -32,7 +33,6 @@ class HomeController < ApplicationController
       webpage = "http://www.amc.com/shows/the-walking-dead"
       color = "green-text"
     end
-
 
     zillow = @rillow.get_search_results("#{address}", "#{city}, #{state}")
     zillow.to_hash

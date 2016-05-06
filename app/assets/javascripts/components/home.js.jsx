@@ -1,3 +1,4 @@
+
 class Home extends React.Component {
   constructor(props) {
     super(props)
@@ -39,9 +40,9 @@ class Home extends React.Component {
     if (this.state.gotAnswer == true) {
       let url = `${this.state.webpage}`
       let color = `${this.state.answerColor}`
-      if (this.state.zestimate != false) {
+      if (this.state.zestimate != false && this.state.population >= 1000) {
         zestimate = `$${this.state.zestimate}`
-        sellHouse = "If you would like to move, you house is worth:"
+        sellHouse = "If you would like to move, your house is worth:"
       }else {
         zestimate = ""
         sellHouse = ""
